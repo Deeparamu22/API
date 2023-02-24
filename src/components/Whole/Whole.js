@@ -5,7 +5,7 @@ export default function Whole() {
     const [Class,setClass]=useState(null);
     const imgref=useRef(null);
     const handleclick=(e)=>{
-        if(e.target.parentElement.children[2].value!==''&&/^(?!\s)[\w\s-]*$/.test(e.target.parentElement.children[2].value)){
+        if(e.target.parentElement.children[2].value!==''&&/^\S/.test(e.target.parentElement.children[2].value)){
             console.log(imgref.current.src);
             imgref.current.src=`https://api.qrserver.com/v1/create-qr-code/?size=190x190&data=${e.target.parentElement.children[2].value}`
         setClass("newclass");
