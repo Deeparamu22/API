@@ -43,7 +43,6 @@
 .qr.newclass{
     width: 100px;
     height: 100px;
-    background-color: antiquewhite;
     display: block;
     pointer-events: auto;
 }

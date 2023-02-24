@@ -10,6 +10,10 @@ export default function Whole() {
             imgref.current.src=`https://api.qrserver.com/v1/create-qr-code/?size=190x190&data=${e.target.parentElement.children[2].value}`
         setClass("newclass");
         }
+        else{
+            console.log("hjk");
+            setClass("");
+        }
     }
   return (
     <div className={style.whole}>
